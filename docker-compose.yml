@@ -1,0 +1,9 @@
+version: '3'
+services:
+   notebook:
+      build:
+         context: ./pyro
+      ports:
+         - "8888:8888"
+      volumes:
+         - ./files:/home/jovyan
